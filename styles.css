@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+  color: white;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Form Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin: 0 15px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-form button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    padding: 50px 10px;
+  }
+}
+
+/* Flexbox Navigation */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Grid for Content Layout */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    height: 80vh;
+    margin: 0 50px;
+  }
+  
+  /* Media Queries for Mobile Layout */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+      margin: 0 10px;
+    }
+  }
+
+  /* To-Do List Styles */
+.todo-list {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .todo-list input {
+    width: 70%;
+    margin-bottom: 10px;
+  }
+  
+  .todo-list button {
+    width: 25%;
+    background-color: #2196f3;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .todo-list button:hover {
+    background-color: #1976d2;
+  }
+  
+  .todo-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .todo-list ul li {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
